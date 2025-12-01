@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>波動圖形產生器 - 快速開始</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature-card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        
+        .step {
+            background: #e8f4fd;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn-secondary {
+            background: #48bb78;
+        }
+        
+        .btn-secondary:hover {
+            background: #38a169;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        
+        .success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+        }
+        
+        li {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 波動圖形產生器</h1>
+        <p class="subtitle">高中物理教學用圖生成工具 - 快速開始指南</p>
+        
+        <div class="success">
+            <strong>✅ 專案已成功建立！</strong><br>
+            您可以開始使用這個工具來製作教學用的波形圖了。
+        </div>
+
+        <h2>🎯 主要功能</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>📐 參數調整</h3>
+                <p>即時調整振幅、波長、相位，立即看到波形變化</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎨 多種配色</h3>
+                <p>投影模式、黑白模式、深色模式，適用不同場景</p>
+            </div>
+            <div class="feature-card">
+                <h3>📁 快速預設</h3>
+                <p>內建常用教學場景，一鍵套用參數</p>
+            </div>
+            <div class="feature-card">
+                <h3>💾 批量下載</h3>
+                <p>收藏喜歡的設定，批量下載 SVG 檔案</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎬 動畫展示</h3>
+                <p>啟用動畫看波的傳播，展示時間演進</p>
+            </div>
+            <div class="feature-card">
+                <h3>🏷 自動標註</h3>
+                <p>波長、振幅自動標註，清楚標示參數</p>
+            </div>
+        </div>
+
+        <h2>🚀 立即開始</h2>
+        
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>安裝依賴</strong>
+            <pre><code>cd wave-generator
+npm install</code></pre>
+        </div>
+
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>啟動開發伺服器</strong>
+            <pre><code>npm run dev</code></pre>
+        </div>
+
+        <div class="step">
+            <span class="step-number">3</span>
+            <strong>在瀏覽器中開啟</strong>
+            <p>打開 <code>http://localhost:5173</code> 即可開始使用！</p>
+        </div>
+
+        <h2>📤 部署到 GitHub Pages</h2>
+        
+        <h3>步驟 1：修改配置</h3>
+        <p>編輯 <code>vite.config.js</code>，將 <code>base</code> 改為你的 repository 名稱：</p>
+        <pre><code>export default defineConfig({
+  plugins: [react()],
+  base: '/你的repo名稱/'
+})</code></pre>
+
+        <h3>步驟 2：建置並部署</h3>
+        <pre><code>npm run build
+cd dist
+git init
+git add -A
+git commit -m 'deploy'
+git push -f <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e2858b96a2858b968a9780cc818d8f">[email&#160;protected]</a>:你的使用者名稱/wave-generator.git main:gh-pages</code></pre>
+
+        <h3>步驟 3：啟用 GitHub Pages</h3>
+        <ol>
+            <li>到 GitHub repository 設定</li>
+            <li>找到 "Pages" 選項</li>
+            <li>Source 選擇 <code>gh-pages</code> 分支</li>
+            <li>儲存後等待部署完成</li>
+        </ol>
+
+        <div class="success">
+            <strong>🎉 完成！</strong><br>
+            您的網站將會在 <code>https://你的使用者名稱.github.io/wave-generator/</code>
+        </div>
+
+        <h2>💡 使用技巧</h2>
+        
+        <h3>教學應用建議</h3>
+        <ul>
+            <li><strong>課堂投影</strong>：使用「投影模式」，開啟標註，配合動畫講解</li>
+            <li><strong>製作講義</strong>：使用「黑白模式」，批量產生不同參數的圖形</li>
+            <li><strong>互動教學</strong>：讓學生調整參數，觀察波形變化</li>
+        </ul>
+
+        <h3>SVG 檔案特點</h3>
+        <ul>
+            <li>✅ 向量圖形，可無限縮放不失真</li>
+            <li>✅ 檔案小，適合網頁使用</li>
+            <li>✅ 可用 Illustrator、Inkscape 編輯</li>
+            <li>✅ 可直接插入 PowerPoint、Word</li>
+        </ul>
+
+        <div class="warning">
+            <strong>⚠️ 注意事項</strong><br>
+            <ul style="margin-top: 0.5rem;">
+                <li>動畫功能在 SVG 匯出後不會保留</li>
+                <li>建議在調整參數後關閉動畫再下載</li>
+                <li>批量下載時會依序觸發多次下載</li>
+            </ul>
+        </div>
+
+        <h2>📚 完整文件</h2>
+        <p>詳細的使用說明請參考：</p>
+        <ul>
+            <li><code>README.md</code> - 專案說明</li>
+            <li><code>使用說明.md</code> - 完整使用手冊</li>
+        </ul>
+
+        <div class="button-group">
+            <a href="#" class="btn" onclick="alert('請使用 npm run dev 啟動開發伺服器'); return false;">
+                開始使用
+            </a>
+            <a href="https://github.com/vitejs/vite" class="btn btn-secondary" target="_blank">
+                Vite 文件
+            </a>
+        </div>
+
+        <hr style="margin: 3rem 0; border: none; border-top: 1px solid #e0e0e0;">
+        
+        <p style="text-align: center; color: #7f8c8d;">
+            製作時間：2024 | 版�
